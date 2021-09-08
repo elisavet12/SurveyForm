@@ -5,6 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aerospace Applying Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="container">
+        <div class="image">
+          <div class="info">
+            <h1 id="title">Aerospace Applying Form</h1>
+            <p id="description">
+              Welcome to our program! Please read the application instructions
+              and review the following documents before beginning your
+              application.
+            </p>
+          </div>
+          <section id="form">
+            <label id="name" for="name-label">Name</label>
+            <input class="box" type="text" placeholder="Name" required />
+            <label id="number" for="age-label">Age</label>
+            <input
+              class="box"
+              type="number"
+              placeholder="Age"
+              min="18"
+              max="65"
+              step="1"
+              required
+            />
+            <label id="email" for="email-label">Email</label>
+            <input
+              class="box"
+              type="email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+              placeholder="{$customfield.description}"
+            />
+            <label id="field" for="field">Whats your field?</label>
+            <select id="field-option" name="field">
+              <option value="Astrophysics">Astrophysics</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Fashion Designer">Fashion Designer</option>
+              <option value="Influencer">Influencer</option>
+            </select>
+            <div class="path-option">
+              <p class="paths">Please choose your path:</p>
+
+              <input type="radio" id="captain" value="Captain" />
+              <label for="path">Captain</label>
+              <input
+                type="radio"
+                id="Supply Officer"
+                value="Supply Officer/Chef"
+              />
+              <label for="path">Supply Officer/Chef</label>
+              <input type="radio" id="Psychic Reader" value="Psychic Reader" />
+              <label for="path">Psychic Reader</label>
+              <input type="radio" id="ButtonPresser1" value="ButtonPresser1" />
+              <label for="path">Button Presser 1</label>
+              <input type="radio" id="ButtonPresser2" value="ButtonPresser2" />
+              <label for="path">Button Presser 2</label>
+              <input type="radio" id="ButtonPresser3" value="ButtonPresser3" />
+              <label for="path">Button Presser 3</label>
+            </div>
+            <div class="superpowers-option">
+              <p class="superpowers">Whats your superpowers?</p>
+              <input type="checkbox" id="Eating" name="eating" />
+              <label for="Eating">Eating</label>
+              <input type="checkbox" id="Sleeping" name="Sleeping" />
+              <label for="Sleeping">Sleeping</label>
+              <input
+                type="checkbox"
+                id="Procrastinating"
+                name="Procrastinating"
+              />
+              <label for="Procrastinating">Procrastinating</label>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <textarea name="text" id="textarea" cols="24" rows="10">
+Additional Comments</textarea
+            >
+            <input type="submit" />
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
