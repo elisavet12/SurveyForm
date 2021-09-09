@@ -47,57 +47,95 @@
               required
               placeholder="{$customfield.description}"
             />
+
             <label id="field" for="field">Whats your field?</label>
-            <select id="field-option" name="field">
+            <select class="box" id="field-option" name="field">
               <option value="Astrophysics">Astrophysics</option>
               <option value="Mathematics">Mathematics</option>
               <option value="Fashion Designer">Fashion Designer</option>
               <option value="Influencer">Influencer</option>
             </select>
+          </section>
+          <section class="properties">
             <div class="path-option">
-              <p class="paths">Please choose your path:</p>
-
-              <input type="radio" id="captain" value="Captain" />
-              <label for="path">Captain</label>
-              <input
-                type="radio"
-                id="Supply Officer"
-                value="Supply Officer/Chef"
-              />
-              <label for="path">Supply Officer/Chef</label>
-              <input type="radio" id="Psychic Reader" value="Psychic Reader" />
-              <label for="path">Psychic Reader</label>
-              <input type="radio" id="ButtonPresser1" value="ButtonPresser1" />
-              <label for="path">Button Presser 1</label>
-              <input type="radio" id="ButtonPresser2" value="ButtonPresser2" />
-              <label for="path">Button Presser 2</label>
-              <input type="radio" id="ButtonPresser3" value="ButtonPresser3" />
-              <label for="path">Button Presser 3</label>
+              <p id="paths">Please choose your path:</p>
+              <div class="option">
+                <input type="radio" id="captain" value="Captain" />
+                <label class="path" for="path">Captain</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  id="Supply Officer"
+                  value="Supply Officer/Chef"
+                />
+                <label class="path" for="path">Supply Officer/Chef</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  id="Psychic Reader"
+                  value="Psychic Reader"
+                />
+                <label class="path" for="path">Psychic Reader</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  id="ButtonPresser1"
+                  value="ButtonPresser1"
+                />
+                <label class="path" for="path">Button Presser 1</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  id="ButtonPresser2"
+                  value="ButtonPresser2"
+                />
+                <label class="path" for="path">Button Presser 2</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  id="ButtonPresser3"
+                  value="ButtonPresser3"
+                />
+                <label class="path" for="path">Button Presser 3</label>
+              </div>
             </div>
             <div class="superpowers-option">
-              <p class="superpowers">Whats your superpowers?</p>
-              <input type="checkbox" id="Eating" name="eating" />
-              <label for="Eating">Eating</label>
-              <input type="checkbox" id="Sleeping" name="Sleeping" />
-              <label for="Sleeping">Sleeping</label>
-              <input
-                type="checkbox"
-                id="Procrastinating"
-                name="Procrastinating"
-              />
-              <label for="Procrastinating">Procrastinating</label>
+              <p id="superpowers">Whats your superpowers?</p>
+              <div class="superpower">
+                <input type="checkbox" id="Eating" name="eating" />
+                <label for="Eating">Eating</label>
+              </div>
+              <div class="superpower">
+                <input type="checkbox" id="Sleeping" name="Sleeping" />
+                <label for="Sleeping">Sleeping</label>
+              </div>
+              <div class="superpower">
+                <input
+                  type="checkbox"
+                  id="Procrastinating"
+                  name="Procrastinating"
+                />
+                <label for="Procrastinating">Procrastinating</label>
+              </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <textarea name="text" id="textarea" cols="24" rows="10">
-Additional Comments</textarea
-            >
-            <input type="submit" />
           </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="text">
+            <textarea name="text" id="textarea" cols="48" rows="10">
+Tell us more...</textarea
+            >
+          </div>
+          <input id="submit" type="submit" />
         </div>
       </div>
     </main>

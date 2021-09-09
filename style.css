@@ -24,7 +24,6 @@ main {
 .container {
   display: grid;
   justify-items: center;
-  /* background-image: url(./images/photo.jpg); */
 }
 
 .container {
@@ -40,7 +39,7 @@ main {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.5;
   background-image: url(./images/photo.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -54,10 +53,10 @@ main {
 
 .info {
   padding: 0px 200px;
+  color: var(--Dark-red);
 }
 
 #title {
-  color: var(--Dark-red);
   font-size: 38px;
   font-weight: 700;
   text-align: center;
@@ -66,6 +65,7 @@ main {
 #description {
   text-align: center;
   font-size: 22px;
+  margin: 0px;
 }
 
 #form {
@@ -75,6 +75,7 @@ main {
   gap: 10px;
   align-items: baseline;
   justify-items: stretch;
+  padding: 20px 200px;
 }
 
 #name {
@@ -82,6 +83,7 @@ main {
   display: block;
   font-weight: 600;
   text-align: center;
+  color: var(--Dark-red);
 }
 
 #number {
@@ -89,6 +91,7 @@ main {
   display: block;
   font-weight: 600;
   text-align: center;
+  color: var(--Dark-red);
 }
 
 #email {
@@ -96,6 +99,7 @@ main {
   display: block;
   font-weight: 600;
   text-align: center;
+  color: var(--Dark-red);
 }
 
 #field {
@@ -103,6 +107,7 @@ main {
   display: block;
   font-weight: 600;
   text-align: center;
+  color: var(--Dark-red);
 }
 
 .box {
@@ -111,4 +116,69 @@ main {
   border-radius: 10px;
   border-style: none;
   background-color: var(--Lighter-orange);
+  color: var(--Dark-grey);
+}
+
+input:valid {
+  color: var(--Dark-red);
+}
+
+input:invalid {
+  color: red;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 200px;
+  justify-items: center;
+}
+.path-option {
+  border-style: solid;
+  border-color: var(--Light-orange);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+  padding: 10px 10px;
+  color: var(--Dark-red);
+  border-radius: 8px;
+}
+#paths {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.path {
+  font-size: 22px;
+}
+
+.superpowers-option {
+  border-style: solid;
+  border-color: var(--Light-orange);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+  padding: 10px 10px;
+  color: var(--Dark-red);
+  border-radius: 8px;
+}
+
+#superpowers {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.superpower {
+  font-size: 22px;
+}
+
+#textarea {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+  width: 100%;
+}
+
+.text {
+  padding: 15px 200px;
+  display: grid;
+  width: 50%;
+  margin: 0px;
+}
+#submit {
+  display: block;
 }
