@@ -170,15 +170,134 @@ input:invalid {
 
 #textarea {
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
-  width: 100%;
+  width: 70%;
+  border-color: var(--Light-orange);
 }
 
 .text {
   padding: 15px 200px;
-  display: grid;
-  width: 50%;
-  margin: 0px;
+  /* display: grid; */
+  /* width: 50%; */
+  /* margin: 0px; */
+  text-align: center;
+  font-size: 18px;
 }
+
+.submit-button {
+  padding: 15px 250px;
+  text-align: center;
+}
+
 #submit {
-  display: block;
+  background-color: var(--Light-orange);
+  border-color: var(--Light-orange);
+  padding: 20px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+  width: 50%;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 950px) {
+  main {
+    padding: 40px 100px;
+  }
+
+  .info {
+    padding: 0px 100px;
+  }
+  #title {
+    font-size: 30px;
+  }
+
+  #description {
+    font-size: 18px;
+  }
+
+  #form {
+    padding: 20px 100px;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  #number {
+    font-size: 20px;
+  }
+
+  #email {
+    font-size: 20px;
+  }
+
+  .properties {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px 100px;
+  }
+
+  .text {
+    padding: 15px 100px;
+  }
+
+  .submit-button {
+    padding: 15px 100px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    main {
+      padding: 40px 50px;
+    }
+
+    .info {
+      padding: 0px 50px;
+    }
+    #title {
+      font-size: 20px;
+      width: 12ch;
+    }
+
+    #description {
+      font-size: 15px;
+      width: 20ch;
+    }
+
+    #form {
+      padding: 20px 50px;
+    }
+
+    #name {
+      font-size: 18px;
+    }
+
+    #number {
+      font-size: 18px;
+    }
+
+    #email {
+      font-size: 18px;
+    }
+
+    .properties {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 15px 50px;
+    }
+
+    .text {
+      padding: 15px 50px;
+    }
+
+    .submit-button {
+      padding: 15px 50px;
+    }
+
+    .box {
+      width: 80%;
+      font-size: 15px;
+    }
+  }
 }
