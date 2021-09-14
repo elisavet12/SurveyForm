@@ -68,7 +68,7 @@ main {
   margin: 0px;
 }
 
-#survey-form {
+#form-info{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -226,7 +226,7 @@ input:invalid {
     font-size: 18px;
   }
 
-  #survey-form {
+  #form-info{
     padding: 20px 100px;
   }
 
@@ -280,7 +280,7 @@ input:invalid {
       display: inline-block;
     }
 
-    #survey-form {
+    #form-info {
       padding: 20px 50px;
     }
 
@@ -319,9 +319,9 @@ input:invalid {
       width: 80%;
       font-size: 15px;
     }
-  }
+  
 
-  @media only screen and (min-width: 750px) {
+  @media only screen and (max-width: 650px) {
     main {
       padding: 40px 25px;
     }
@@ -330,7 +330,7 @@ input:invalid {
       padding: 0px 25px;
     }
 
-    #survey-form {
+    #form-info{
       padding: 20px 25px;
     }
 
@@ -342,4 +342,5 @@ input:invalid {
       padding: 15px 25px;
     }
   }
+}
 }
