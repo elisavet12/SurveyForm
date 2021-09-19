@@ -102,7 +102,7 @@ main {
   color: var(--Dark-red);
 }
 
-#field-label {
+#field {
   font-size: 24px;
   display: block;
   font-weight: 600;
