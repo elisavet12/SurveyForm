@@ -15,160 +15,155 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="image">
-          <div class="info">
-            <h1 id="title">Aerospace Applying Form</h1>
-            <p id="description">
-              Welcome to our program! Please read the application instructions
-              and review the following documents before beginning your
-              application.
-            </p>
-          </div>
-          <form id="survey-form">
-            <section id="form-info">
-              <label id="name-label" for="name">Name</label>
-              <input
-                id="name"
-                class="box"
-                type="text"
-                placeholder="Name"
-                required
-              />
-              <label id="number-label" for="number">Age</label>
-              <input
-                id="number"
-                class="box"
-                type="number"
-                placeholder="Age"
-                min="18"
-                max="65"
-                step="1"
-                required
-              />
-              <label id="email-label" for="email">Email</label>
-              <input
-                id="email"
-                class="box"
-                type="email"
-                placeholder="Email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                required
-              />
+      <form id="survey-form">
+        <div class="info">
+          <h1 id="title">Aerospace Applying Form</h1>
+          <p id="description">
+            Welcome to our program! Please read the application instructions and
+            review the following documents before beginning your application.
+          </p>
+        </div>
+        <section id="form-info">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            class="box"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <label id="number-label" for="number">Age</label>
+          <input
+            id="number"
+            class="box"
+            type="number"
+            placeholder="Age"
+            min="18"
+            max="65"
+            step="1"
+            required
+          />
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            class="box"
+            type="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
 
-              <label id="field-label" for="dropdown">Whats your field?</label>
-              <select class="box" id="dropdown" name="field">
-                <option disabled selected value>Select your field</option>
-                <option value="Astrophysics">Astrophysics</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Fashion Designer">Fashion Designer</option>
-                <option value="Influencer">Influencer</option>
-              </select>
-            </section>
-            <section class="properties">
-              <div class="path-option">
-                <p id="paths">Please choose your path:</p>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="captain"
-                    value="Captain"
-                  />
-                  <label class="path" for="captain">Captain</label>
-                </div>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="SupplyOfficer"
-                    value="Supply Officer/Chef"
-                  />
-                  <label class="path" for="SupplyOfficer"
-                    >Supply Officer/Chef</label
-                  >
-                </div>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="PsychicReader"
-                    value="Psychic Reader"
-                  />
-                  <label class="path" for="PsychicReader">Psychic Reader</label>
-                </div>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="ButtonPresser1"
-                    value="ButtonPresser1"
-                  />
-                  <label class="path" for="ButtonPresser1"
-                    >Button Presser 1</label
-                  >
-                </div>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="ButtonPresser2"
-                    value="ButtonPresser2"
-                  />
-                  <label class="path" for="ButtonPresser2"
-                    >Button Presser 2</label
-                  >
-                </div>
-                <div class="option">
-                  <input
-                    name="user-option"
-                    type="radio"
-                    id="ButtonPresser3"
-                    value="ButtonPresser3"
-                  />
-                  <label class="path" for="ButtonPresser3"
-                    >Button Presser 3</label
-                  >
-                </div>
-              </div>
-              <div class="superpowers-option">
-                <p id="superpowers">Whats your superpowers?</p>
-                <div class="superpower">
-                  <input type="checkbox" id="Eating" name="eating" />
-                  <label for="Eating">Eating</label>
-                </div>
-                <div class="superpower">
-                  <input type="checkbox" id="Sleeping" name="Sleeping" />
-                  <label for="Sleeping">Sleeping</label>
-                </div>
-                <div class="superpower">
-                  <input
-                    type="checkbox"
-                    id="Procrastinating"
-                    name="Procrastinating"
-                  />
-                  <label for="Procrastinating">Procrastinating</label>
-                </div>
-              </div>
-            </section>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <div class="text">
-              <textarea name="text" id="textarea" cols="48" rows="10">
-Tell us more...</textarea
+          <label id="field-label" for="dropdown">Whats your field?</label>
+          <select class="box" id="dropdown" name="field">
+            <option disabled selected value>Select your field</option>
+            <option value="Astrophysics">Astrophysics</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Fashion Designer">Fashion Designer</option>
+            <option value="Influencer">Influencer</option>
+          </select>
+        </section>
+        <section class="properties">
+          <fieldset class="path-option">
+            <legend id="paths">Please choose your path:</legend>
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="captain"
+                value="Captain"
+              />
+              <label class="path" for="captain">Captain</label>
+            </div>
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="SupplyOfficer"
+                value="Supply Officer/Chef"
+              />
+              <label class="path" for="SupplyOfficer"
+                >Supply Officer/Chef</label
               >
             </div>
-            <div class="submit-button">
-              <input id="submit" type="submit" />
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="PsychicReader"
+                value="Psychic Reader"
+              />
+              <label class="path" for="PsychicReader">Psychic Reader</label>
             </div>
-          </form>
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="ButtonPresser1"
+                value="ButtonPresser1"
+              />
+              <label class="path" for="ButtonPresser1">Button Presser 1</label>
+            </div>
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="ButtonPresser2"
+                value="ButtonPresser2"
+              />
+              <label class="path" for="ButtonPresser2">Button Presser 2</label>
+            </div>
+            <div class="option">
+              <input
+                name="user-option"
+                type="radio"
+                id="ButtonPresser3"
+                value="ButtonPresser3"
+              />
+              <label class="path" for="ButtonPresser3">Button Presser 3</label>
+            </div>
+          </fieldset>
+          <fieldset class="superpowers-option">
+            <legend id="superpowers">Whats your superpowers?</legend>
+            <div class="superpower">
+              <input
+                type="checkbox"
+                id="Eating"
+                name="superpower"
+                value="Eating"
+              />
+              <label for="Eating">Eating</label>
+            </div>
+            <div class="superpower">
+              <input
+                type="checkbox"
+                id="Sleeping"
+                name="superpower"
+                value="Sleeping"
+              />
+              <label for="Sleeping">Sleeping</label>
+            </div>
+            <div class="superpower">
+              <input
+                type="checkbox"
+                id="Procrastinating"
+                name="superpower"
+                value="Procrastinating"
+              />
+              <label for="Procrastinating">Procrastinating</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <div class="text">
+          <textarea name="text" id="textarea" cols="48" rows="10">
+Tell us more...</textarea
+          >
         </div>
-      </div>
+        <div class="submit-button">
+          <button id="submit" type="submit">SUBMIT</button>
+        </div>
+      </form>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

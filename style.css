@@ -5,9 +5,11 @@
   --Lighter-orange: rgb(235, 197, 176);
 }
 
+* {box-sizing: border-box;}
+
 body {
   margin: 0px auto;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   place-content: center;
   min-height: 100vh;
   font-family: "Nunito Sans";
@@ -17,21 +19,37 @@ body {
   max-width: 1440px;
 }
 
-main {
+/* main {
   padding: 40px 180px;
-}
+} */
 
-.container {
+/* .container {
   display: grid;
   justify-items: center;
-}
+} */
 
-.container {
+/* .container {
   position: relative;
   padding: 0px 36px;
-}
+} */
 
-.container:before {
+/* .container:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(./images/photo.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 24px;
+} */
+
+#survey-form:before {
   content: " ";
   display: block;
   position: absolute;
@@ -47,12 +65,15 @@ main {
   border-radius: 24px;
 }
 
-.image {
+
+/* .image {
   position: relative;
-}
+} */
+
+
 
 .info {
-  padding: 0px 200px;
+  /* padding: 0px 200px; */
   color: var(--Dark-red);
 }
 
@@ -75,7 +96,7 @@ main {
   gap: 10px;
   align-items: baseline;
   justify-items: stretch;
-  padding: 20px 200px;
+  /* padding: 20px 200px; */
 }
 
 #name-label {
@@ -112,7 +133,7 @@ main {
 
 .box {
   font-size: 20px;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   border-radius: 10px;
   border-style: none;
   background-color: var(--Lighter-orange);
@@ -131,7 +152,7 @@ input:invalid {
 .properties {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 15px 200px;
+  /* padding: 15px 200px; */
   justify-items: center;
 }
 .path-option {
@@ -185,7 +206,7 @@ input:invalid {
 }
 
 .text {
-  padding: 15px 200px;
+  /* padding: 15px 200px; */
   /* display: grid; */
   /* width: 50%; */
   /* margin: 0px; */
@@ -213,11 +234,11 @@ input:invalid {
 
 @media only screen and (max-width: 950px) {
   main {
-    padding: 40px 100px;
+    /* padding: 40px 100px; */
   }
 
   .info {
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
   }
   #title {
     font-size: 30px;
@@ -228,7 +249,7 @@ input:invalid {
   }
 
   #form-info{
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
   }
 
   #name-label {
@@ -246,24 +267,24 @@ input:invalid {
   .properties {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 15px 100px;
+    /* padding: 15px 100px; */
   }
 
   .text {
-    padding: 15px 100px;
+    /* padding: 15px 100px; */
   }
 
   .submit-button {
-    padding: 15px 100px;
+    /* padding: 15px 100px; */
   }
 
   @media only screen and (max-width: 700px) {
     main {
-      padding: 40px 50px;
+      /* padding: 40px 50px; */
     }
 
     .info {
-      padding: 0px 50px;
+      /* padding: 0px 50px; */
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -282,7 +303,7 @@ input:invalid {
     }
 
     #form-info {
-      padding: 20px 50px;
+      /* padding: 20px 50px; */
     }
 
     #name-label {
@@ -305,15 +326,15 @@ input:invalid {
     .properties {
       grid-template-columns: 1fr;
       gap: 20px;
-      padding: 15px 50px;
+      /* padding: 15px 50px; */
     }
 
     .text {
-      padding: 15px 50px;
+      /* padding: 15px 50px; */
     }
 
     .submit-button {
-      padding: 15px 50px;
+      /* padding: 15px 50px; */
     }
 
     .box {
@@ -324,15 +345,15 @@ input:invalid {
 
   @media only screen and (max-width: 650px) {
     main {
-      padding: 40px 25px;
+      /* padding: 40px 25px; */
     }
 
     .info {
-      padding: 0px 25px;
+      /* padding: 0px 25px; */
     }
 
     #form-info{
-      padding: 20px 25px;
+      /* padding: 20px 25px; */
     }
 
     .box {
@@ -340,7 +361,7 @@ input:invalid {
     }
 
     .properties {
-      padding: 15px 25px;
+      /* padding: 15px 25px; */
     }
   }
 }
