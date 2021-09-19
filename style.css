@@ -119,6 +119,7 @@ main {
   color: var(--Dark-grey);
 }
 
+
 input:valid {
   color: var(--Dark-red);
 }
