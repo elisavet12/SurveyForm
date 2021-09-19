@@ -27,10 +27,17 @@
           </div>
           <form id="survey-form">
             <section id="form-info">
-              <label id="name" for="name-label">Name</label>
-              <input class="box" type="text" placeholder="Name" required />
-              <label id="number" for="age-label">Age</label>
+              <label id="name-label" for="name">Name</label>
               <input
+                id="name"
+                class="box"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <label id="number-label" for="number">Age</label>
+              <input
+                id="number"
                 class="box"
                 type="number"
                 placeholder="Age"
@@ -39,17 +46,17 @@
                 step="1"
                 required
               />
-              <label id="email" for="email-label">Email</label>
+              <label id="email-label" for="email">Email</label>
               <input
+                id="email"
                 class="box"
                 type="email"
                 placeholder="Email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
-                placeholder="{$customfield.description}"
               />
 
-              <label id="field" for="field">Whats your field?</label>
+              <label id="field-label" for="dropdown">Whats your field?</label>
               <select class="box" id="dropdown" name="field">
                 <option disabled selected value>Select your field</option>
                 <option value="Astrophysics">Astrophysics</option>
@@ -68,25 +75,27 @@
                     id="captain"
                     value="Captain"
                   />
-                  <label class="path" for="path">Captain</label>
+                  <label class="path" for="captain">Captain</label>
                 </div>
                 <div class="option">
                   <input
                     name="user-option"
                     type="radio"
-                    id="Supply Officer"
+                    id="SupplyOfficer"
                     value="Supply Officer/Chef"
                   />
-                  <label class="path" for="path">Supply Officer/Chef</label>
+                  <label class="path" for="SupplyOfficer"
+                    >Supply Officer/Chef</label
+                  >
                 </div>
                 <div class="option">
                   <input
                     name="user-option"
                     type="radio"
-                    id="Psychic Reader"
+                    id="PsychicReader"
                     value="Psychic Reader"
                   />
-                  <label class="path" for="path">Psychic Reader</label>
+                  <label class="path" for="PsychicReader">Psychic Reader</label>
                 </div>
                 <div class="option">
                   <input
@@ -95,7 +104,9 @@
                     id="ButtonPresser1"
                     value="ButtonPresser1"
                   />
-                  <label class="path" for="path">Button Presser 1</label>
+                  <label class="path" for="ButtonPresser1"
+                    >Button Presser 1</label
+                  >
                 </div>
                 <div class="option">
                   <input
@@ -104,7 +115,9 @@
                     id="ButtonPresser2"
                     value="ButtonPresser2"
                   />
-                  <label class="path" for="path">Button Presser 2</label>
+                  <label class="path" for="ButtonPresser2"
+                    >Button Presser 2</label
+                  >
                 </div>
                 <div class="option">
                   <input
@@ -113,7 +126,9 @@
                     id="ButtonPresser3"
                     value="ButtonPresser3"
                   />
-                  <label class="path" for="path">Button Presser 3</label>
+                  <label class="path" for="ButtonPresser3"
+                    >Button Presser 3</label
+                  >
                 </div>
               </div>
               <div class="superpowers-option">
